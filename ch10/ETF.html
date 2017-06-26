@@ -1,0 +1,1602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://www.sse.com.cn/assortment/fund/etf/diclosure/volumn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="ie=7">
+		
+		<meta http-equiv="pragma" content="no-cache">
+		<title>ETF规模</title>
+
+		<script>var col_id=177</script>
+
+		<link rel="stylesheet" type="text/css" href="./ETF规模_files/layout.css">
+<link rel="stylesheet" type="text/css" href="./ETF规模_files/style.css">					
+<link href="./ETF规模_files/main_menu_blue.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./ETF规模_files/s_suggest.css">	
+		<script type="text/javascript" src="./ETF规模_files/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./ETF规模_files/1left.js"></script>
+<script type="text/javascript" src="./ETF规模_files/1mainmenu.js"> </script>
+<script type="text/javascript" src="./ETF规模_files/jquery-extend-1.0.js"></script>
+<script type="text/javascript" src="./ETF规模_files/validate.js"></script>
+<script type="text/javascript" src="./ETF规模_files/WdatePicker.js"></script><link href="./ETF规模_files/WdatePicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./ETF规模_files/s_suggest.js"></script></head><body><input type="text" id="keyIndex" style="display:none"><div id="ccl_results" style="z-index: 99999"></div>
+<script type="text/javascript" src="./ETF规模_files/verify_utils.js"></script>
+<script type="text/javascript" src="./ETF规模_files/common.js"></script>
+<script type="text/javascript" src="./ETF规模_files/publicRs.js"></script>
+<script type="text/javascript" src="./ETF规模_files/systemDate_global.js"></script>
+<!--<script type="text/javascript" src="/js/flgz/sse_date_select.js"></script>-->
+<script type="text/javascript" src="./ETF规模_files/hyjs.js"></script>
+<script type="text/javascript" src="./ETF规模_files/ahyfl.js"></script>
+<script type="text/javascript" src="./ETF规模_files/yyplqk.js"></script>
+<script type="text/javascript">
+          jQuery(document).ready(function(){
+                 var winOnloadFun = window.onload;
+                 window.onload = function(){};
+                 winOnloadFun.apply();
+         });
+</script>
+<script type="text/javascript" src="./ETF规模_files/ssesuggestdata.js"></script>
+<script type="text/javascript" src="./ETF规模_files/ssesuggestEbonddata.js"></script>
+<script type="text/javascript" src="./ETF规模_files/ssesuggestfunddata.js"></script>
+<script type="text/javascript" src="./ETF规模_files/ssesuggestTbonddata.js"></script>
+<script type="text/javascript" src="./ETF规模_files/ssesuggestdataAll.js"></script>
+
+<script type="text/javascript" language="javascript">
+		
+	function bluring() {
+		if (event.srcElement.tagName == 'A'
+				|| event.srcElement.tagName == 'IMG')
+			document.body.focus();
+	}
+	document.onfocusin = bluring;
+</script>
+<script>
+var flag= "false";var t= 0;
+if(col_id == '775')
+{
+	mainflash_id = '0101';
+	window.onload = function (){chang();}
+}
+else
+{
+	readtree();
+	window.onload = function (){initTree();chang();}	
+}
+readtree();
+function readtree(arrayName)
+{
+	var arrayName = "LeftMenu";
+	findid(arrayName);
+}
+
+function findid(arrayName)
+{
+	  	var category = eval(arrayName);
+
+		for(var i=0; i <category.length; i++) {
+		  	var subcolum = category[i][3];
+			var flash = category[i][1];
+			var len = category[i][1].length;
+			var col = category[i][2];
+			var nodisplay = category[i][6];
+		  	if(subcolum == 0){
+		  	}else if (subcolum == 1){ 
+		    	arrayName = "LeftMenu_"+category[i][1];
+		        findid(arrayName);
+			}
+			if(nodisplay != "")
+			{
+			parts = nodisplay.split(",");
+			for( var j=0; j<parts.length;j++)
+			{
+				if(parts[j] == col_id)
+				{
+					flash_id = flash;
+					colmain_id = col;
+					if(flash_id.length == "4")
+					{
+						fcol_id = col;
+						readtree_m();
+					}
+					var f_arrayName = "LeftMenu_"+flash_id.substr(0,2);
+					findid_f(f_arrayName);
+				}	
+				
+			}
+			
+			}
+			if((col_id == col) && (flash != "01"))
+			{
+			  flash_id = flash;	
+			  colmain_id = col;
+                                                  if(flash_id.length == "4")
+	                                 {
+				fcol_id = col;
+				readtree_m();
+			  }
+			  var f_arrayName = "LeftMenu_"+flash_id.substr(0,2);
+			  findid_f(f_arrayName);
+			}
+
+		}
+
+}
+
+function findid_f(f_arrayName)
+{
+		var f = eval(f_arrayName);
+		for (var j=0;j<f.length;j++)
+		{
+			var subcolum_f = f[j][3];
+			if(subcolum_f == 0)
+			{
+		  	}
+			else if (subcolum_f == 1)
+			{ 
+		    	f_arrayName = "LeftMenu_"+f[j][1];
+		        findid_f(f_arrayName);
+			}
+			for (var k=1;k<flash_id.length/2-1;k++)
+			{
+					if((f[j][1] == flash_id.substr(0,flash_id.length - 2 * k)))
+						
+						{
+							fcol_id = f[j][2];
+							readtree_m();
+						}
+						
+				
+				}
+		}
+		
+}
+function readtree_m(arrayName_m)
+{
+	var arrayName_m = "MainMenu";
+	findid_m(arrayName_m);
+}
+function findid_m(arrayName_m)
+{
+	var tree_m = eval(arrayName_m);
+	for(var i=0; i <tree_m.length; i++)
+	 {
+		var subcolum_m = tree_m[i][3];
+		var flash_m = tree_m[i][1];
+		var len_m = tree_m[i][1].length;
+		var col_m = tree_m[i][2];
+		
+		if(subcolum_m == 0)
+		{
+		}
+		else if (subcolum_m == 1)
+		{ 
+			arrayName_m = "MainMenu_"+tree_m[i][1];
+			findid_m(arrayName_m);
+			
+		}
+		if((colmain_id == col_m) && (flash_m != "01"))
+		{
+			mainflash_id = flash_m;
+			flag = "true";
+		}
+		if(flag == "false")
+		{
+			var aa = "false";
+			if((fcol_id == col_m) && (flash_m != "01"))
+			{
+
+				t = t + 1;
+				if(t == 1)
+				{
+					
+					mainflash_id = flash_m;
+				}
+				
+			}
+
+
+		}
+		
+	}
+	
+}
+</script>
+<script>
+$(function(){
+  $("#container tr.targetTR>td").css("background","url(/images/home_cambridge_blue_topbj.gif) repeat-x");
+})
+</script>
+	
+
+	
+		<table id="container" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff">
+			<tbody><tr class="targetTR" style="background: rgb(255, 255, 255);">
+				<td id="left_shadow" style="background: url(http://www.sse.com.cn/images/home_cambridge_blue_topbj.gif) repeat-x;">&nbsp;</td>
+				<td height="100%" valign="top" style="vertical-align: top; background: url(http://www.sse.com.cn/images/home_cambridge_blue_topbj.gif) repeat-x;"><!-- id="siteFrame" -->
+					<table height="100%" class="wrap">
+						<tbody><tr height="210" class="targetTR" style="background: rgb(255, 255, 255);">
+							<td valign="top" style="height: auto; background: url(http://www.sse.com.cn/images/home_cambridge_blue_topbj.gif) repeat-x;">
+								<div id="head"><!-- 页头开始  -->
+									<script language="javascript">
+	function doSubmitfooter1() {
+		if (document.frmfooter1.KeyWord.value == '' || document.frmfooter1.KeyWord.value == '输入关键字,查网站内容') {
+			alert("请输入完整检索条件后进行检索");
+			document.frmfooter1.KeyWord.focus();
+			return false;
+		} else
+			return true;
+	}
+</script>
+<script language="javascript">
+	function doSubmitfrm51n1() {
+		with (document.frmcheck) {
+			if (DateDeclare.value == "") {
+				alert("请选择查询公告日期");
+				return false;
+			}
+			if (!isChkDateAll(DateDeclare.value, ""))
+				return false;
+		}
+		return true;
+	}
+</script>
+<script language="javascript">
+	function calDateDeclareb() {
+		with (document.frm5_2_1_2_j41) {
+			if (isEmpty(InputCond.value)) {
+				alert("请输入查询的证券代码或简称");
+				return false;
+			}
+			return true;
+		}
+	}
+</script>
+<script language="javascript">
+	function initHistoricalQueryDate() {
+		var endDate = new Date();
+		var beginDate = adjustDateOfSpecifiedDate(endDate, -7);
+		document.forms.frm5_2_1_2_j4.DateDeclareStart.value = dateToString(beginDate);
+		document.forms.frm5_2_1_2_j4.DateDeclareEnd.value = dateToString(endDate);
+	}
+</script>
+<script language="javascript">
+	function calDateDeclare1() {
+		with (document.frm5_2_1_2_j4) {
+			if (!isEmpty(DateDeclareStart.value)) {
+				if (!isDate(DateDeclareStart.value)) {
+					alert("请选择正确时间");
+					return false;
+				}
+			}
+			if (!isEmpty(DateDeclareEnd.value)) {
+				if (!isDate(DateDeclareEnd.value)) {
+					alert("请选择正确时间");
+					return false;
+				}
+				if (!isChkDateAll(DateDeclareStart.value, DateDeclareEnd.value))
+					return false;
+			}
+			if (isEmpty(InputCond.value)) {
+				alert("请输入查询的证券代码或简称");
+				return false;
+			}
+			return true;
+		}
+	}
+</script>
+<div class="top_logo">
+    <a href="http://www.sse.com.cn/"><img width="300" height="110" src="./ETF规模_files/blankimage.gif"></a>
+</div><!--头部logo -->
+<div class="headbox_right">
+    <ul class="headbox_right_top">
+        <li><a href="http://www.sse.com.cn/">首页</a> |</li>
+        <li><a href="http://www.sse.com.cn/marketservices/servicesupport/websuport/map/">网站地图</a> |</li>
+        <li><a href="http://www.sse.com.cn/marketservices/servicesupport/questions/business/trading/">常见问题</a> |</li>
+        <li><a href="http://www.sse.com.cn/aboutus/contactus/">联系我们</a></li>
+        <li><a class="right_en" target="_blank" href="http://english.sse.com.cn/"></a></li>
+    </ul><div class="clear"></div>
+    <script type="text/javascript">
+		var homevalidate = function(val) {
+			if (val == "输入证券代码,查公告") {
+				val = "";
+			}
+			if (jQuery.trim(val).length == 0) {
+				alert("请输入查询关键词 关键字可为 : 证券代码");
+				return false;
+			}
+			if(isNaN(val)){
+				alert("证券代码必须为数字");
+				return false;
+			}
+			if (val.length < 6 || val.length > 6) {
+				alert("证券代码必须是6位数字");
+				return false;
+			}
+			var pattern = new RegExp("[`~!@%#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]")
+			if (pattern.test(val)) {
+				alert("请输入正确的查询条件.");
+				return false;
+			}
+			return true;
+		};
+		var searchBulletin = function() {
+			var code = document.getElementById("searchtop").value;
+			if (!homevalidate(code)) {
+				return;
+			}
+			var flag = utils.checkSecurityCode(code);
+			if(flag===0||flag===1){
+				window.open("/assortment/stock/list/stockdetails/announcement/index.shtml?COMPANY_CODE=" + code + "" + "&static=t");
+			}else if(flag===2){
+				window.open("/disclosure/bond/tbondissue/tbond_index_n.shtml?productId="+code+"&reportType=qbgg&beginDate="+ utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&moreConditions=false");
+			}else if(flag===3){
+				window.open("/disclosure/bond/corporate/corporate_index_n.shtml?productId="+code+"&reportType=qbgg&beginDate="+ utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&moreConditions=false");
+			}else if(flag===4){
+				window.open("/disclosure/fund/announcement/fund_index_n.shtml?reportType2=全部&productId="+code+"&beginDate="+utils.changeDateByMonth(utils.dateFormatterToString(new Date()),-12)+"&endDate="+utils.dateFormatterToString(new Date())+"&reportType=&moreConditions=false");
+			}
+		};
+		var searchMarket = function() {
+			var code = document.getElementById("searchtop").value;
+			if (!homevalidate(code)) {
+				return;
+			}
+			window.open("/assortment/stock/list/stockdetails/price/index.shtml?COMPANY_CODE=" + code + "" + "");
+		};
+		var searchNewTips = function() {
+			var keywords = jQuery("#searchWholeSite").val();
+			if (keywords == "输入关键字,查网站内容") {
+				keywords = "";
+			}
+			if (jQuery.trim(keywords).length == 0) {
+				alert("请输入查询关键词. ");
+				return false;
+			}
+			window.open("/marketservices/servicesupport/websuport/search_result.shtml?keywords=" + keywords);
+		};
+    </script>
+	
+    <!--顶部右上角链接 -->
+    <div class="headbox_right_bottom">
+        <input class="searchtop" type="text" style="height: 14px;" onfocus="if(this.value==&#39;输入证券代码,查公告&#39;){this.value=&#39;&#39;;}" onblur="clearSuggest();if(this.value==&#39;&#39;){this.value=&#39;输入证券代码,查公告&#39;;}" onkeypress="utils.keypress2TriggerClickEvent(event,&#39;bulletinsearchingBtn&#39;)" onkeydown="return tabfix(this.value,event,this);" onkeyup="suggest(this.value,event,this,&#39;all&#39;);" id="searchtop" maxlength="50" size="21" value="输入证券代码,查公告" name="keyword">
+        <a href="javascript:void(0)" onclick="searchBulletin()" id="bulletinsearchingBtn"><img width="41" height="16" src="./ETF规模_files/botton_cgg.gif"></a>
+        <a href="javascript:void(0)" onclick="searchMarket()" id="marketsearchingBtn"><img width="41" height="16" src="./ETF规模_files/botton_chq.gif"></a>
+        <input class="search1" type="text" style="height: 14px;" onfocus="if(this.value==&#39;输入关键字,查网站内容&#39;){this.value=&#39;&#39;;}" onblur="clearSuggest();if(this.value==&#39;&#39;){this.value=&#39;输入关键字,查网站内容&#39;;}" onkeydown="return tabfix(this.value,event,this);" onkeypress="utils.keypress2TriggerClickEvent(event,&#39;searchsitecontent&#39;)" onkeyup="suggest(this.value,event,this,&#39;all&#39;);" id="searchWholeSite" maxlength="50" size="21" value="输入关键字,查网站内容" name="KeyWord">
+        <a href="javascript:void(0)" onclick="searchNewTips()" id="searchsitecontent"><img width="36" height="16" src="./ETF规模_files/botton_ss.gif"></a>
+    </div>
+</div>
+<!--头部右边 -->
+
+								</div><!-- 页头结束  -->
+
+								<div id="page_nav"><!--中间主导航开始 -->
+									<div id="main_navi"></div>
+<script type="text/javascript" src="./ETF规模_files/main_menu_cn.js"></script>
+<script type="text/javascript" src="./ETF规模_files/menuList.js"></script><div onmouseover="mouseover();" class="container"><div id="containerpage"><div onmouseout="fun(event,this)" id="menuTop"><div id="listavoci1"><ul style="LIST-STYLE-IMAGE: none; LIST-STYLE-TYPE: none"><li class="nero" onmouseover="switchmodTag(&quot;0101&quot;,&quot;slidingList&quot;,0);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0101"><a href="http://www.sse.com.cn/" class="">首页</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0102&quot;,&quot;slidingList&quot;,1);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0102"><a href="http://www.sse.com.cn/disclosure/" class="">信息披露</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0103&quot;,&quot;slidingList&quot;,2);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0103"><a href="http://www.sse.com.cn/market/" class="">市场数据</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0104&quot;,&quot;slidingList&quot;,3);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0104"><a href="http://www.sse.com.cn/assortment/" class="current">交易品种</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0105&quot;,&quot;slidingList&quot;,4);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0105"><a href="http://www.sse.com.cn/lawandrules/law/law/securities/" class="">法律规则</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0106&quot;,&quot;slidingList&quot;,5);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0106"><a href="http://www.sse.com.cn/marketservices/" class="">市场服务</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0107&quot;,&quot;slidingList&quot;,6);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0107"><a href="http://www.sse.com.cn/researchpublications/latest/" class="">研究出版</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0108&quot;,&quot;slidingList&quot;,7);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0108"><a href="http://www.sse.com.cn/aboutus/" class="">关于本所</a><span class="line_1">|</span></li><li class="nero" onmouseover="switchmodTag(&quot;0109&quot;,&quot;slidingList&quot;,8);this.blur();" style="list-style-image: none; list-style-type: none; display: block;" id="0109"><a href="http://biz.sse.com.cn/" class="red">业务平台</a><span class="line_1">|</span></li></ul></div></div><div class="bgSottomenu"><div id="listavoci0" onmouseout="fun(event,this)" onmouseover="emptyClass();"><div style="display: none;" id="slidingList01"></div></div><div id="listavoci2" onmouseout="fun(event,this)" onmouseover="emptyClass();"><div style="display: none;" id="slidingList02"><a id="010201" href="http://www.sse.com.cn/disclosure/dealinstruc/" class="">交易提示</a><span class="line_2">|</span><a id="010202" href="http://www.sse.com.cn/disclosure/announcement/general/" class="">上交所公告</a><span class="line_2">|</span><a id="010203" href="http://www.sse.com.cn/disclosure/credibility/dynamic/" class="">监管信息公开</a><span class="line_2">|</span><a id="010204" href="http://www.sse.com.cn/disclosure/listedinfo/announcement/" class="">上市公司公告</a><span class="line_2">|</span><a id="010205" href="http://www.sse.com.cn/disclosure/fund/announcement/" class="">基金公告</a><span class="line_2">|</span><a id="010206" href="http://www.sse.com.cn/disclosure/bond/tbondissue/" class="">债券公告</a><span class="line_2">|</span><a id="010207" href="http://www.sse.com.cn/disclosure/diclosure/public/" class="">交易信息披露</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList03"><a id="010301" href="http://www.sse.com.cn/market/price/trends/" class="">行情信息</a><span class="line_2">|</span><a id="010302" href="http://www.sse.com.cn/market/sseindex/introduction/" class="">上证指数</a><span class="line_2">|</span><a id="010303" href="http://www.sse.com.cn/market/dealingdata/overview/stock/abshare/" class="">成交概况</a><span class="line_2">|</span><a id="010304" href="http://www.sse.com.cn/market/dealingdata/dealrank/activity/" class="">证券交易排名</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: block; text-align: left; padding-left: 290px;" id="slidingList04"><a id="010401" href="http://www.sse.com.cn/assortment/stock/home/" class="">股票</a><span class="line_2">|</span><a id="010402" href="http://www.sse.com.cn/assortment/fund/overview/" class="current">基金</a><span class="line_2">|</span><a id="010403" href="http://www.sse.com.cn/assortment/bonds/overview/" class="">债券</a><span class="line_2">|</span><a id="010404" href="http://www.sse.com.cn/assortment/derivatives/options/home/" class="">衍生品</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList05"><a id="010501" href="http://www.sse.com.cn/lawandrules/law/law/securities/" class="">法律法规</a><span class="line_2">|</span><a id="010502" href="http://www.sse.com.cn/lawandrules/regulations/csrcorder/" class="">部门规章</a><span class="line_2">|</span><a id="010503" href="http://www.sse.com.cn/lawandrules/sserules/latest/" class="">本所业务规则</a><span class="line_2">|</span><a id="010504" href="http://www.sse.com.cn/lawandrules/guide/disclosure/dailymemo/" class="">本所业务指南与流程</a><span class="line_2">|</span><a id="010505" href="http://www.sse.com.cn/lawandrules/ma/" class="">审核登记事项</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList06"><a id="010601" href="http://www.sse.com.cn/marketservices/listing/tobelisted/home/" class="">发行上市服务</a><span class="line_2">|</span><a id="010602" href="http://www.sse.com.cn/marketservices/tradingservice/process/" class="">交易服务</a><span class="line_2">|</span><a id="010603" href="http://www.sse.com.cn/marketservices/tradingservice/charge/" class="">交易费用</a><span class="line_2">|</span><a id="010604" href="http://www.sse.com.cn/marketservices/hkexsc/home/" class="">沪港通</a><span class="line_2">|</span><a id="010605" href="http://www.sse.com.cn/marketservices/investors/home/" class="">投资者服务</a><span class="line_2">|</span><a id="010606" href="http://www.sse.com.cn/marketservices/training/home/" class="">培训服务</a><span class="line_2">|</span><a id="010607" href="http://www.sseinfo.com/infonet/information/service.html" target="_blank" class="">数据服务</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList07"><a id="010701" href="http://www.sse.com.cn/researchpublications/latest/" class="">最新报告</a><span class="line_2">|</span><a id="010702" href="http://www.sse.com.cn/researchpublications/jointresearch/" class="">上证联合研究计划</a><span class="line_2">|</span><a id="010703" href="http://www.sse.com.cn/researchpublications/publication/factbook/" class="">市场资料</a><span class="line_2">|</span><a id="010704" href="http://www.sse.com.cn/researchpublications/publication/monthly/" class="">上证统计月报</a><span class="line_2">|</span><a id="010705" href="http://www.sse.com.cn/researchpublications/publication/yearly/" class="">统计年鉴</a><span class="line_2">|</span><a id="010706" href="http://www.sse.com.cn/researchpublications/publication/actofcourt/" class="">证券法苑</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList08"><a id="010801" href="http://www.sse.com.cn/aboutus/sseintroduction/introduction/" class="">本所介绍</a><span class="line_2">|</span><a id="010802" href="http://www.sse.com.cn/aboutus/hotandd/ssenews/" class="">本所动态</a><span class="line_2">|</span><a id="010803" href="http://www.sse.com.cn/aboutus/ssemember/membership/" class="">本所会员</a><span class="line_2">|</span><a id="010804" href="http://www.sse.com.cn/aboutus/innovation/introduction/" class="">创新业务</a><span class="line_2">|</span><a id="010805" href="http://www.sse.com.cn/aboutus/regulatory/home/" class="">监管专栏</a><span class="line_2">|</span><a id="010806" href="http://www.sse.com.cn/aboutus/cooperation/" class="">国际交流与合作</a><span class="line_2">|</span><a id="010807" href="http://www.sse.com.cn/aboutus/recruitment/sse/" class="">招聘信息  </a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div><div style="display: none;" id="slidingList09"><a id="010901" href="http://biz.sse.com.cn/list/" target="_blank" class="subred">上市公司专区</a><span class="line_2">|</span><a id="010902" href="http://biz.sse.com.cn/member/" target="_blank" class="subred">会员/证券机构专区</a><span class="line_2">|</span><a id="010903" href="http://biz.sse.com.cn/fund/" target="_blank" class="subred">基金专区</a><span class="line_2">|</span><a id="010904" href="http://biz.sse.com.cn/bond/" target="_blank" class="subred">债券专区</a><span class="line_2">|</span><a id="010905" href="http://biz.sse.com.cn/ca/" target="_blank" class="subred">CA服务专区</a><span class="line_2">|</span><a id="010906" href="http://biz.sse.com.cn/media/" target="_blank" class="subred">媒体专区</a><span class="line_2">|</span><a id="010907" href="http://csrc.sse.com.cn/" target="_blank" class="subred">证监局专区</a><img height="14" src="./ETF规模_files/blankimage(1).gif" width="10"> <br class="clear"></div></div></div></div></div>
+								</div><!--中间主导航结束-->
+
+								<div id="page_path">
+									<div id="path"><div id="path_01" classname="path" class="path"><a href="http://www.sse.com.cn/">首页</a></div><div id="path_0103" classname="subpath" class="subpath"><a href="http://www.sse.com.cn/assortment/">交易品种</a></div><div id="path_010302" classname="subpath" class="subpath"><a href="http://www.sse.com.cn/assortment/fund/overview/">基金</a></div><div id="path_01030205" classname="subpath" class="subpath"><a href="http://www.sse.com.cn/assortment/fund/etf/home/">ETF</a></div><div id="path_0103020506" classname="subpath" class="subpath"><a href="./ETF规模_files/ETF规模.html">信息披露</a></div><div id="path_010302050601" classname="subpath" class="subpath"><a href="./ETF规模_files/ETF规模.html">ETF规模</a></div></div>
+ <script language="JavaScript" src="./ETF规模_files/path.js"></script>
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" style="vertical-align:top;height:auto;" class="content_bg">
+
+								<div id="main_page">
+									<table id="Area" style="width: 1010px;">
+										<tbody><tr>
+											<td id="A_Area" width="192" valign="top" style="background: rgb(239, 239, 239);">
+												<div id="left_page">
+													﻿<link href="./ETF规模_files/left_menu_blue_layout.css" rel="stylesheet" type="text/css">
+<link href="./ETF规模_files/left_menu_blue_css.css" rel="stylesheet" type="text/css">
+
+<script src="./ETF规模_files/leftMenu_qm_css.js"></script><style type="text/css">.qmistreestylesqm0{} #qm0{position:relative !important;} #qm0 a{float:none !important;white-space:normal !important;position:static !important}#qm0 div{width:auto !important;left:0px !important;top:0px !important;overflow:hidden !important;margin-left:0px !important;margin-top:0px !important;}</style>
+<div onmousemove="funLeftMenuMove(event,this);">
+<div id="left_navi_top"><div classname="left_navi_top" class="left_navi_top"><ul>交易品种</ul></div></div>
+<div id="left_navi" onmouseout="funLeftMenuOut(event,this);" onmouseover="funLeftMenuInner(event,this);">
+<script src="./ETF规模_files/leftMenu_new_css.js"></script><div class="qmmc" id="qm0" style="display: block; zoom: 1; z-index: 11;"><a id="left_010301" href="javascript:void(0);" class="nav2_splus qmparent" style="float: none;">&nbsp;&nbsp;&nbsp;&nbsp;股票</a><div id="left_010301_ul" style="z-index: 21;"><a id="left_01030101" href="http://www.sse.com.cn/assortment/stock/home/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总览</a><a id="left_01030102" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股票列表</a><div id="left_01030102_ul" style="z-index: 31;"><a id="left_0103010201" href="http://www.sse.com.cn/assortment/stock/list/name/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名称检索</a><a id="left_0103010202" href="http://www.sse.com.cn/assortment/stock/list/area/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地区检索</a><a id="left_0103010203" href="http://www.sse.com.cn/assortment/stock/list/trade/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业检索</a></div><a id="left_01030103" href="http://www.sse.com.cn/assortment/stock/preferreds/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优先股</a><a id="left_01030104" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统计数据</a><div id="left_01030104_ul" style="z-index: 31;"><a id="left_0103010401" href="http://www.sse.com.cn/assortment/stock/statistic/overview/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总貌</a><a id="left_0103010402" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;募集资金</a><div id="left_0103010402_ul" style="z-index: 41;"><a id="left_010301040201" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/survey/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;概况</a><a id="left_010301040202" href="javascript:void(0);" class="nav5_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首发</a><div id="left_010301040202_ul" style="z-index: 51;"><a id="left_01030104020201" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/ipo/ashare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A股首发</a><a id="left_01030104020202" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/ipo/bshare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B股首发</a></div><a id="left_010301040203" href="javascript:void(0);" class="nav5_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增发</a><div id="left_010301040203_ul" style="z-index: 51;"><a id="left_01030104020301" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/additional/ashare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A股增发</a><a id="left_01030104020302" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/additional/bshare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B股增发</a></div><a id="left_010301040204" href="javascript:void(0);" class="nav5_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配股</a><div id="left_010301040204_ul" style="z-index: 51;"><a id="left_01030104020401" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/allotment/ashare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A股配股</a><a id="left_01030104020402" href="http://www.sse.com.cn/assortment/stock/statistic/fundraising/allotment/bshare/" class="nav6" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B股配股</a></div></div><a id="left_0103010403" href="http://www.sse.com.cn/marketservices/information/dataservice/capital/overview/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股本结构</a><a id="left_0103010404" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分红/送股</a><div id="left_0103010404_ul" style="z-index: 41;"><a id="left_010301040401" href="http://www.sse.com.cn/assortment/stock/statistic/dividendbonus/dividend/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分红</a><a id="left_010301040402" href="http://www.sse.com.cn/assortment/stock/statistic/dividendbonus/bonus/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送股</a></div><a id="left_0103010405" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地区行业分类</a><div id="left_0103010405_ul" style="z-index: 41;"><a id="left_010301040501" href="http://www.sse.com.cn/assortment/stock/statistic/areatrade/area/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按地区分类</a><a id="left_010301040502" href="http://www.sse.com.cn/assortment/stock/statistic/areatrade/trade/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按行业分类</a><a id="left_010301040503" href="http://www.sse.com.cn/assortment/stock/statistic/areatrade/ahassortment/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AH股公司行业分类</a></div><a id="left_0103010406" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海/沪深市盈率</a><div id="left_0103010406_ul" style="z-index: 41;"><a id="left_010301040601" href="http://www.sseinfo.com/infonet/web/peratio.do?method=list" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海市场</a><a id="left_010301040602" href="http://www.csindex.com.cn/sseportal/csiportal/hy_syl/syl.jsp" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;沪深市场</a></div><a id="left_0103010407" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专题统计</a><div id="left_0103010407_ul" style="z-index: 41;"><a id="left_010301040701" href="http://www.sse.com.cn/assortment/stock/statistic/ksgsfxts/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;扣非后亏损公司风险提示</a></div></div><a id="left_01030105" href="http://www.sse.com.cn/disclosure/listedinfo/announcement/" class="nav3" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公告信息</a></div><a id="left_010302" href="javascript:void(0);" class="nav2_splus qmparent qmactive" style="float: none;">&nbsp;&nbsp;&nbsp;&nbsp;基金</a><div id="left_010302_ul" class="qmfv" style="z-index: 21; position: relative;"><a id="left_01030201" href="http://www.sse.com.cn/assortment/fund/overview/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总览</a><a id="left_01030202" href="http://www.sse.com.cn/assortment/fund/list/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金列表</a><a id="left_01030203" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金管理公司列表</a><div id="left_01030203_ul" style="z-index: 31;"><a id="left_0103020301" href="http://www.sse.com.cn/assortment/fund/fundcompany/list/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金管理公司列表</a><a id="left_0103020302" href="http://www.sse.com.cn/assortment/fund/fundcompany/applicant/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;申请成立基金管理公司机构列表</a></div><a id="left_01030204" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;封闭式基金</a><div id="left_01030204_ul" style="z-index: 31;"><a id="left_0103020401" href="http://www.sse.com.cn/assortment/fund/closedendfund/general/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总貌</a><a id="left_0103020402" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发行与扩募</a><div id="left_0103020402_ul" style="z-index: 41;"><a id="left_010302040201" href="http://www.sse.com.cn/assortment/fund/closedendfund/issueexpansion/issuing/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金发行</a><a id="left_010302040202" href="http://www.sse.com.cn/assortment/fund/closedendfund/issueexpansion/expanding/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金扩募</a></div><a id="left_0103020403" href="http://www.sse.com.cn/assortment/fund/closedendfund/dividend/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分红</a><a id="left_0103020404" href="http://www.sse.com.cn/assortment/fund/closedendfund/fundsbulkholding/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金重仓股</a><a id="left_0103020405" href="http://www.sse.com.cn/assortment/fund/closedendfund/netprice/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;封闭式基金净值</a></div><a id="left_01030205" href="javascript:void(0);" class="nav3_splus qmparent qmactive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETF</a><div id="left_01030205_ul" style="z-index: 31; position: relative;" class="qmfv"><a id="left_0103020501" href="http://www.sse.com.cn/assortment/fund/etf/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a><a id="left_0103020502" href="http://www.sse.com.cn/assortment/fund/etf/etf/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETF行情</a><a id="left_0103020503" href="http://www.sse.com.cn/assortment/fund/etf/rules/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务规则</a><a id="left_0103020504" href="http://www.sse.com.cn/assortment/fund/etf/question/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常见问题</a><a id="left_0103020505" href="http://www.sse.com.cn/assortment/fund/etf/crossborder/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;跨境ETF</a><a id="left_0103020506" href="javascript:void(0);" class="nav4_splus qmparent qmactive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息披露</a><div id="left_0103020506_ul" style="z-index: 41; position: relative;" class="qmfv"><a id="left_010302050601" href="./ETF规模_files/ETF规模.html" class="nav5 leftcurrent" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETF规模</a><a id="left_010302050602" href="http://www.sse.com.cn/market/dealingdata/overview/fund/etf/" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二级市场成交概况</a><a id="left_010302050603" href="http://www.sse.com.cn/disclosure/diclosure/etf/" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETF公告申购赎回清单</a><a id="left_010302050604" href="http://www.sse.com.cn/disclosure/fund/announcement/" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相关基金公告</a></div></div><a id="left_01030206" href="http://www.sse.com.cn/assortment/fund/currencyfund/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实时申赎货币基金</a><a id="left_01030207" href="http://www.sse.com.cn/assortment/fund/tcurrencyfund/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易型货币基金</a><a id="left_01030208" href="http://www.sse.com.cn/disclosure/fund/announcement/" class="nav3" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基金公告</a><a id="left_01030209" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上市开放式基金（LOF）</a><div id="left_01030209_ul" style="z-index: 31;"><a id="left_0103020901" href="http://www.sse.com.cn/assortment/fund/lof/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a><a id="left_0103020902" href="http://www.sse.com.cn/assortment/fund/lof/netvalue/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;净值</a><a id="left_0103020903" href="http://www.sse.com.cn/assortment/fund/lof/market/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行情</a><a id="left_0103020904" href="http://www.sse.com.cn/assortment/fund/lof/scale/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;规模</a></div><a id="left_01030210" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分级LOF基金</a><div id="left_01030210_ul" style="z-index: 31;"><a id="left_0103021001" href="http://www.sse.com.cn/assortment/fund/fjlof/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a><a id="left_0103021002" href="http://www.sse.com.cn/assortment/fund/fjlof/netvalue/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;净值</a><a id="left_0103021003" href="http://www.sse.com.cn/assortment/fund/fjlof/market/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行情</a><a id="left_0103021004" href="http://www.sse.com.cn/assortment/fund/fjlof/scale/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;规模</a></div></div><a id="left_010303" href="javascript:void(0);" class="nav2_splus qmparent" style="float: none;">&nbsp;&nbsp;&nbsp;&nbsp;债券</a><div id="left_010303_ul" style="z-index: 21;"><a id="left_01030301" href="http://www.sse.com.cn/assortment/bonds/overview/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总览</a><a id="left_01030302" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;债券列表</a><div id="left_01030302_ul" style="z-index: 31;"><a id="left_0103030201" href="http://www.sse.com.cn/assortment/bonds/list/tbond/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国债列表</a><a id="left_0103030202" href="http://www.sse.com.cn/assortment/bonds/list/local/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地方债列表</a><a id="left_0103030203" href="http://www.sse.com.cn/assortment/bonds/list/corporate/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司债、企业债代码列表</a><a id="left_0103030204" href="http://www.sse.com.cn/assortment/bonds/list/convertible/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可转换债列表</a><a id="left_0103030205" href="http://www.sse.com.cn/assortment/bonds/list/repo/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;债券回购列表</a><a id="left_0103030206" href="http://www.sse.com.cn/assortment/bonds/list/detachable/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分离债列表</a></div><a id="left_01030303" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司债专栏</a><div id="left_01030303_ul" style="z-index: 31;"><a id="left_0103030301" href="http://www.sse.com.cn/assortment/bonds/corporatebond/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专栏首页</a><a id="left_0103030302" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司债实时行情</a><div id="left_0103030302_ul" style="z-index: 41;"><a id="left_010303030201" href="http://www.sse.com.cn/assortment/bonds/corporatebond/price/competition/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;竞价系统实时行情</a><a id="left_010303030202" href="http://bond.sse.com.cn/fisp/fixed/info/info.html" class="nav5" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;固定收益平台行情</a></div><a id="left_0103030303" href="http://www.sse.com.cn/assortment/bonds/corporatebond/latest/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最新动态</a><a id="left_0103030304" href="http://www.sse.com.cn/disclosure/bond/corporate/" class="nav4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息披露</a><a id="left_0103030305" href="http://www.sse.com.cn/assortment/bonds/corporatebond/rules/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务规则</a><a id="left_0103030306" href="http://www.sse.com.cn/assortment/bonds/corporatebond/basic/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础知识</a><a id="left_0103030307" href="http://edu.sse.com.cn/sseportal/newedu/c04/c02/p1434/c200402_p1434.shtml" class="nav4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资者教育</a></div><a id="left_01030304" href="http://www.sse.com.cn/assortment/bonds/outrightrepo/" class="nav3" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国债买断式回购</a><a id="left_01030305" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业资产支持证券</a><div id="left_01030305_ul" style="z-index: 31;"><a id="left_0103030501" href="http://www.sse.com.cn/assortment/bonds/assets/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a><a id="left_0103030502" href="http://www.sse.com.cn/assortment/bonds/assets/products/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品列表</a><a id="left_0103030503" href="http://www.sse.com.cn/assortment/bonds/assets/assingment/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转让信息</a><a id="left_0103030504" href="http://www.sse.com.cn/assortment/bonds/assets/home/#3" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息披露</a><a id="left_0103030505" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务通知</a><div id="left_0103030505_ul" style="z-index: 41;"><a id="left_010303050501" href="http://www.sse.com.cn/assortment/bonds/assets/notice/transfer/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转让服务通知</a><a id="left_010303050502" href="http://www.sse.com.cn/assortment/bonds/assets/notice/end/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到期兑付通知</a><a id="left_010303050503" href="http://www.sse.com.cn/assortment/bonds/assets/notice/other/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他</a></div></div><a id="left_01030306" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信贷资产支持证券</a><div id="left_01030306_ul" style="z-index: 31;"><a id="left_0103030601" href="http://www.sse.com.cn/assortment/bonds/creditasset/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a><a id="left_0103030602" href="http://www.sse.com.cn/assortment/bonds/creditasset/products/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品列表</a><a id="left_0103030603" href="http://www.sse.com.cn/assortment/bonds/creditasset/dealinfo/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成交信息</a><a id="left_0103030604" href="http://www.sse.com.cn/assortment/bonds/creditasset/home/#3" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息披露</a><a id="left_0103030605" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务通知</a><div id="left_0103030605_ul" style="z-index: 41;"><a id="left_010303060501" href="http://www.sse.com.cn/assortment/bonds/creditasset/notice/notice/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务通知</a><a id="left_010303060502" href="http://www.sse.com.cn/assortment/bonds/creditasset/notice/end/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到期兑付通知</a><a id="left_010303060503" href="http://www.sse.com.cn/assortment/bonds/creditasset/notice/orher/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他</a></div></div><a id="left_01030307" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统计数据</a><div id="left_01030307_ul" style="z-index: 31;"><a id="left_0103030701" href="http://www.sse.com.cn/assortment/bonds/statistic/general/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总貌</a><a id="left_0103030702" href="http://www.sse.com.cn/assortment/bonds/statistic/basic/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;债券基本信息</a><a id="left_0103030703" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专项统计</a><div id="left_0103030703_ul" style="z-index: 41;"><a id="left_010303070301" href="http://www.sse.com.cn/assortment/bonds/statistic/special/equity/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可转债转股统计</a><a id="left_010303070302" href="http://www.sse.com.cn/assortment/bonds/statistic/special/profit/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;债券收益统计</a></div><a id="left_0103030704" href="http://www.sse.com.cn/assortment/bonds/statistic/netfull/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;净价与全价</a></div><a id="left_01030308" href="http://www.sse.com.cn/disclosure/bond/corporate/" class="nav3" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公告信息</a></div><a id="left_010304" href="javascript:void(0);" class="nav2_splus qmparent" style="float: none;">&nbsp;&nbsp;&nbsp;&nbsp;衍生品</a><div id="left_010304_ul" style="z-index: 21;"><a id="left_01030401" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股票期权</a><div id="left_01030401_ul" style="z-index: 31;"><a id="left_0103040101" href="http://www.sse.com.cn/assortment/derivatives/options/home/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专栏首页</a><a id="left_0103040102" href="http://www.sse.com.cn/assortment/derivatives/options/contract/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合约规格</a><a id="left_0103040103" href="http://www.sse.com.cn/assortment/derivatives/options/price/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;延时行情</a><a id="left_0103040104" href="http://www.sse.com.cn/assortment/derivatives/options/volatility/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;波动率指数</a><a id="left_0103040105" href="http://www.sse.com.cn/assortment/derivatives/options/risk/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风险指标</a><a id="left_0103040106" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息披露</a><div id="left_0103040106_ul" style="z-index: 41;"><a id="left_010304010601" href="http://www.sse.com.cn/assortment/derivatives/options/disclo/preinfo/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当日合约</a><a id="left_010304010602" href="http://www.sse.com.cn/assortment/derivatives/options/disclo/info/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂牌信息</a><a id="left_010304010603" href="http://www.sse.com.cn/assortment/derivatives/options/disclo/note/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提醒信息</a><a id="left_010304010604" href="http://www.sse.com.cn/assortment/derivatives/options/disclo/tradeinfo/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易信息</a><a id="left_010304010605" href="http://www.sse.com.cn/assortment/derivatives/options/disclo/exercise/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行权交收信息</a></div><a id="left_0103040107" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统计数据</a><div id="left_0103040107_ul" style="z-index: 41;"><a id="left_010304010701" href="http://www.sse.com.cn/assortment/derivatives/options/date/overview/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日统计</a><a id="left_010304010702" href="http://www.sse.com.cn/assortment/derivatives/options/date/momthly/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月度统计</a></div><a id="left_0103040108" href="http://www.sse.com.cn/assortment/derivatives/options/rule/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务规则</a><a id="left_0103040109" href="http://www.sse.com.cn/assortment/derivatives/options/guide/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务指南</a><a id="left_0103040110" href="http://www.sse.com.cn/assortment/derivatives/options/sms/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易参与人业务管理系统</a></div><a id="left_01030402" href="javascript:void(0);" class="nav3_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;权证</a><div id="left_01030402_ul" style="z-index: 31;"><a id="left_0103040201" href="http://www.sse.com.cn/assortment/warrants/list/" class="nav4" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;权证列表</a><a id="left_0103040202" href="javascript:void(0);" class="nav4_splus qmparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统计数据</a><div id="left_0103040202_ul" style="z-index: 41;"><a id="left_010304020201" href="http://www.sse.com.cn/assortment/warrants/statistics/general/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总貌</a><a id="left_010304020202" href="http://www.sse.com.cn/assortment/warrants/statistics/currentbasicinfo/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;权证流通基本信息</a><a id="left_010304020203" href="http://www.sse.com.cn/assortment/warrants/statistics/currentlistinfo/" class="nav5" target="_self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;权证流通明细信息</a></div><a id="left_0103040203" href="http://www.sse.com.cn/disclosure/warrants/" class="nav4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公告信息</a></div></div><span class="qmclear">&nbsp;</span></div></div>
+</div>
+<script type="text/javascript">
+	qm_create(0,true,0,500,'all',false,false,false,false);
+	
+		var searchTips = function(){
+		     var keywords = document.getElementById("leftNavKeyWord").value;
+                     if($.trim(keywords).length===0||keywords=="本站检索"){
+                                alert("请输入查询关键字.");
+                                return;
+                     }
+                     //alert(keywords);
+		     window.open("/marketservices/servicesupport/websuport/search_result.shtml?keywords="+keywords);
+		};
+	
+</script>
+<br>
+<div class="bzjs">
+<input name="KeyWord" id="leftNavKeyWord" type="text" value="本站检索" size="19" maxlength="120" border="0" onblur="if(this.value==&quot;&quot;){this.value=&quot;本站检索&quot;;}" onfocus="if(this.value==&quot;本站检索&quot;){this.value=&quot;&quot;;}">
+		<input type="hidden" name="page" value="1">
+		<a href="javascript:searchTips()"><img width="26" height="16" src="./ETF规模_files/button_go.gif"></a>
+</div>
+
+
+
+
+<script type="text/javascript">
+if (( col_id == "1845")||( col_id == "1846")||( col_id == "1847")||( col_id == "1844"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/index.shtml' target='_blank'><img src ='/images/left_banner_4008888400_192.gif;pv1cb2231041b7db20' border='0'></a>");
+}
+if (( col_id == "4107"))
+{
+document.write("<a href ='https://120.204.69.22/ipo' target='_blank'><img src ='/images/left_banner_sgpt.gif' border='0'></a>");
+}
+if (( col_id == "222")||( col_id == "223"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/a/20130114/trade.doc' target='_blank'><img src ='/images/left_banner_cjwd2007.jpg;pvd6b5d43747846691' border='0'></a><p></p>");
+document.write("<a href ='/marketservices/servicesupport/questions/business/trading/index.shtml' target='_blank'><img src ='/images/left_banner_ywcjwt.jpg;pv1d57ac226fd8bfc4' border='0'></a>");
+}
+if (( col_id == "231")||( col_id == "233")||( col_id == "235")||( col_id == "236")||( col_id == "220"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/a/20130114/trade.doc' target='_blank'><img src ='/images/left_banner_cjwd2007.jpg;pvd6b5d43747846691' border='0'><p></p>");
+document.write("<a href ='/marketservices/servicesupport/hotline/home/index.shtml' target='_blank'><img src ='/images/left_banner_4008888400.jpg;pv16f6a1bd1f750127' border='0'></a>");
+}
+if (( col_id == "367")||( col_id == "358")||( col_id == "359")||( col_id == "362"))
+{
+document.write("<a href ='http://www.csindex.com.cn/sseportal/csiportal/zs/jbxx/daily_index_info.jsp' target='_blank'><img src ='/images/left_banner_zzzsmrbk.jpg;pvee665e8e064e71ab' border='0'>");
+document.write("<a href ='http://www.csindex.com.cn/sseportal/csiportal/indexquery.do' target='_blank'><img src ='/images/left_banner_zzzs.jpg;pve38efbf9acdb619e' border='0'></a>");
+}
+if (( col_id == "33")||( col_id == "42")||( col_id == "54")||( col_id == "55")||( col_id == "57")||( col_id == "56")||( col_id == "884")||( col_id == "674")||
+( col_id == "425")||( col_id == "428")||( col_id == "429")||( col_id == "430")||( col_id == "431")||( col_id == "434")||( col_id == "435")||( col_id == "436")||( col_id == "437")||( col_id == "319")||( col_id == "41")||( col_id == "875")||( col_id == "881")||( col_id == "882")||( col_id == "883")||( col_id == "884")||( col_id == "60")||( col_id == "580")||( col_id == "189")||( col_id == "282")||( col_id == "95")||( col_id == "7")||( col_id == "160")||( col_id == "106")||( col_id == "107")||( col_id == "132")||( col_id == "64")||( col_id == "675"))
+{
+document.write("<a href ='http://bond.sse.com.cn' target='_blank'><img src ='/images/left_banner_zqxxw_192.jpg;pv4577eb7ee5256ad9' border='0'></a>");
+}
+if (( col_id == "8")||( col_id == "15")||( col_id == "745")||( col_id == "751")||( col_id == "313")||( col_id == "360"))
+{
+document.write("<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0' width='192' height='58' ><param name='movie' value='/flash/edu_ad.swf' style='margin:10px 0 0 0;'><param name='quality' value='high'><embed src='/flash/edu_ad.swf' style='margin:10px 0 0 0;'quality='high' pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='192' height='58'></embed></object>");
+}
+if (( col_id == "599"))
+{
+document.write("<a href ='/marketservices/servicesupport/hotline/home/' target='_blank'><img src ='/images/left_banner_4008888400_192.gif;pv1cb2231041b7db20' border='0'></a>");
+document.write("<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0' width='192' height='58' ><param name='movie' value='/flash/edu_ad.swf'><param name='quality' value='high'><embed src='/flash/edu_ad.swf' style='margin:10px 0 0 0;'quality='high' pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='192' height='58'></embed></object>");
+}
+</script>
+
+												</div>
+											</td>
+											<td id="B_Area" valign="top" style="background: rgb(255, 255, 255);">
+												<div id="right_page">
+													<span class="page_title">ETF规模</span>
+													
+<div id="content_ab">
+
+   <div class="block_l1">
+	<h1>ETF规模</h1><script type="text/javascript">
+                                var defaultDate =get_systemDate_global();
+				//--------------------------------------------------------------------------------------------------------------
+				var etfgm_div_url = destinationHostURI+"/commonQuery.do?jsonCallBack=?";//自定义
+				var etfgm_div_params = {'isPagnation':true,'sqlId':'COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_L','pageHelp.pageSize':10000};
+				//搜索params
+				var etfgm_div_search_params = {'isPagnation':true,'sqlId':'COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L','pageHelp.pageSize':10000};
+				var etfgm_div = new Container(true,"etfgm_div","etfgm_div_table");
+				var linkformatter = function(data,code){
+					return "<a href='#'>"+eval("data."+code)+"</a>";
+				};
+
+				var loadEtfgm_divContainer = function(params){
+					 var etfgm_div_hearder = new Array(); 
+						etfgm_div_hearder[0] = {'headName':'日期','code':'STAT_DATE',index:0, 'formatter':utils.ifnullThenSetEmpty};
+						etfgm_div_hearder[1] = {'headName':'基金代码','code':'SEC_CODE',index:1, 'formatter':utils.ifnullThenSetEmpty};
+						etfgm_div_hearder[2] = {'headName':'基金简称','code':'SEC_NAME',index:2, 'formatter':utils.ifnullThenSetEmpty};
+						etfgm_div_hearder[3] = {'headName':'总份额（亿份）','code':'TOT_VOL',index:3, 'formatter':utils.ifnullThenSetEmpty,'halign':"td_content_right"};
+					
+					etfgm_div.init(etfgm_div_hearder);
+					etfgm_div.getDataByAjax(etfgm_div_url,params,null);
+				};
+				//--------------------------------------------------------------------------------------------------------------
+				var goSwitch = function(event){
+                                        $("#etfgm_div").empty();
+					var searchDate = $("#searchDate").val();
+					etfgm_div_search_params = utils.mergeJson(etfgm_div_search_params, {'STAT_DATE':searchDate});
+					loadEtfgm_divContainer(etfgm_div_search_params);
+				};
+				
+				$(document).ready(function(){
+                                        $("#etfgm_div tr").css("background-color", "white");  
+                                        $("#etfgm_div tr:even").css("background-color", "#DBEDF8"); 
+                                        $("input[name='searchDate']").val(defaultDate );
+					//loadEtfgm_divContainer(etfgm_div_params);
+				});
+		</script>
+
+<span id="staticDate" style="display:none">2015-07-29 23:00:00</span>
+                                <span class="form_term">
+					<input id="searchDate" name="searchDate" type="text" value="" readonly="" size="10" onclick="WdatePicker()">
+					<input type="image" src="./ETF规模_files/bt_go.gif" border="0" style="vertical-align:middle" onclick="javascript:goSwitch()">
+				</span>
+				<br>
+				<ul class="tab_table">
+				    <li class="tab_table_on"><span name="jjhistoryDate"></span>ETF规模</li>
+				</ul>
+				<div id="etfgm_div">
+                                          <table class="tablestyle">
+    <tbody>
+        <tr id="etfgm_div_table_head" style="background-color: rgb(219, 237, 248);">
+            <th desc="日期" id="STAT_DATE" index="0" sortable="undefined">
+                日期
+            </th>
+            <th desc="基金代码" id="SEC_CODE" index="1" sortable="undefined">
+                基金代码
+            </th>
+            <th desc="基金简称" id="SEC_NAME" index="2" sortable="undefined">
+                基金简称
+            </th>
+            <th desc="总份额（亿份）" id="TOT_VOL" index="3" sortable="undefined">
+                总份额（亿份）
+            </th>
+        </tr>
+        <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510010
+            </td>
+            <td>
+                治理ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    6.46
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510020
+            </td>
+            <td>
+                超大ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.30
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510030
+            </td>
+            <td>
+                价值ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.69
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510050
+            </td>
+            <td>
+                50ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                  160.00
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510060
+            </td>
+            <td>
+                央企ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.21
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510070
+            </td>
+            <td>
+                民企ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.59
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510090
+            </td>
+            <td>
+                责任ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.01
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510110
+            </td>
+            <td>
+                周期ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.19
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510120
+            </td>
+            <td>
+                非周ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.17
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510130
+            </td>
+            <td>
+                中盘ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.96
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510150
+            </td>
+            <td>
+                消费ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.47
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510160
+            </td>
+            <td>
+                小康ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   20.32
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510170
+            </td>
+            <td>
+                商品ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.90
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510180
+            </td>
+            <td>
+                180ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   64.71
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510190
+            </td>
+            <td>
+                龙头ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.47
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510210
+            </td>
+            <td>
+                综指ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.51
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510220
+            </td>
+            <td>
+                中小ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.10
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510230
+            </td>
+            <td>
+                金融ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    7.67
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510260
+            </td>
+            <td>
+                新兴ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.92
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510270
+            </td>
+            <td>
+                国企ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.36
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510280
+            </td>
+            <td>
+                成长ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.60
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510290
+            </td>
+            <td>
+                380ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.04
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510300
+            </td>
+            <td>
+                300ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   79.88
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510310
+            </td>
+            <td>
+                HS300ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   37.56
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510330
+            </td>
+            <td>
+                华夏300
+            </td>
+            <td class="td_content_right td_content_right">
+                   49.24
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510410
+            </td>
+            <td>
+                资源ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.33
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510420
+            </td>
+            <td>
+                180EWETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.48
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510430
+            </td>
+            <td>
+                50等权
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.80
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510440
+            </td>
+            <td>
+                500沪市
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.16
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510450
+            </td>
+            <td>
+                180高ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.09
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510500
+            </td>
+            <td>
+                500ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   24.36
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510510
+            </td>
+            <td>
+                广发500
+            </td>
+            <td class="td_content_right td_content_right">
+                    9.69
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510520
+            </td>
+            <td>
+                诺安500
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.09
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510560
+            </td>
+            <td>
+                国寿500
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.82
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510610
+            </td>
+            <td>
+                能源行业
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.53
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510620
+            </td>
+            <td>
+                材料行业
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.36
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510630
+            </td>
+            <td>
+                消费行业
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.10
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510650
+            </td>
+            <td>
+                金融行业
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.55
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510660
+            </td>
+            <td>
+                医药行业
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.71
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510680
+            </td>
+            <td>
+                万家380
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.07
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510700
+            </td>
+            <td>
+                百强ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.06
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510710
+            </td>
+            <td>
+                上50ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.06
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510880
+            </td>
+            <td>
+                红利ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.61
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                510900
+            </td>
+            <td>
+                H股ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                   21.07
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                511010
+            </td>
+            <td>
+                国债ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.04
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                511210
+            </td>
+            <td>
+                企债ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.01
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                511220
+            </td>
+            <td>
+                城投ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.62
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512010
+            </td>
+            <td>
+                医药ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.38
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512070
+            </td>
+            <td>
+                非银ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    6.43
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512110
+            </td>
+            <td>
+                中证地产
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.02
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512120
+            </td>
+            <td>
+                中证医药
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.60
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512210
+            </td>
+            <td>
+                景顺食品
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.85
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512220
+            </td>
+            <td>
+                景顺TMT
+            </td>
+            <td class="td_content_right td_content_right">
+                    3.90
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512230
+            </td>
+            <td>
+                景顺医药
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.54
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512300
+            </td>
+            <td>
+                500医药
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.07
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512310
+            </td>
+            <td>
+                500工业
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.37
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512330
+            </td>
+            <td>
+                500信息
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.03
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512340
+            </td>
+            <td>
+                500原料
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.73
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512500
+            </td>
+            <td>
+                中证500
+            </td>
+            <td class="td_content_right td_content_right">
+                    3.48
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512510
+            </td>
+            <td>
+                ETF500
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.96
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512600
+            </td>
+            <td>
+                主要消费
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.13
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512610
+            </td>
+            <td>
+                医药卫生
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.63
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512640
+            </td>
+            <td>
+                金融地产
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.11
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                512990
+            </td>
+            <td>
+                MSCIA股
+            </td>
+            <td class="td_content_right td_content_right">
+                    6.74
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                513030
+            </td>
+            <td>
+                德国30
+            </td>
+            <td class="td_content_right td_content_right">
+                    2.25
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                513100
+            </td>
+            <td>
+                纳指ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.36
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                513500
+            </td>
+            <td>
+                标普500
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.81
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                513600
+            </td>
+            <td>
+                恒指ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.61
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                513660
+            </td>
+            <td>
+                恒生通
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.86
+            </td>
+        </tr>
+             <tr style="background-color: rgb(219, 237, 248);">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                518800
+            </td>
+            <td>
+                国泰黄金
+            </td>
+            <td class="td_content_right td_content_right">
+                    0.16
+            </td>
+        </tr>
+             <tr style="background-color: white;">
+            <td>
+                2015-07-29
+            </td>
+            <td>
+                518880
+            </td>
+            <td>
+                黄金ETF
+            </td>
+            <td class="td_content_right td_content_right">
+                    1.76
+            </td>
+        </tr>
+         </tbody>
+</table>  </div>
+
+<span class="form_desc">
+     注：统计数据为当日清算后数据<br>
+<a href="http://www.sse.com.cn/assortment/fund/etf/diclosure/volumn/fundscale_index.shtml" target="_blank">点击这里</a>，查看"交易型货币基金"规模<br>
+</span>
+</div>
+
+
+</div>
+ 
+												</div>
+											</td>
+										</tr>
+									</tbody></table>
+
+								</div>
+							</td>
+						</tr>
+						<tr height="80" class="targetTR" style="background: rgb(255, 255, 255);">
+							<td valign="bottom" style="background: url(http://www.sse.com.cn/images/home_cambridge_blue_topbj.gif) repeat-x;">
+								<div id="footer">
+									<div class="footer_bj">
+
+	<span class="bottom_font">
+		<a href="http://www.sse.com.cn/aboutus/contactus/index.shtml">联系我们</a>|
+		<a href="http://www.sse.com.cn/marketservices/servicesupport/websuport/feedback/index.shtml">用户反馈</a>|
+		<a href="http://www.sse.com.cn/marketservices/servicesupport/websuport/map/index.shtml">网站地图</a>|
+		<a href="http://www.sse.com.cn/marketservices/servicesupport/websuport/links/index.shtml">相关链接</a>|
+		<a href="http://www.sse.com.cn/marketservices/servicesupport/websuport/legal/index.shtml">法律声明</a>|
+		<a href="http://www.sse.com.cn/aboutus/sseintroduction/trademark/index.shtml">注册商标</a>
+	</span>
+	
+	<span class="font_white bottom_font">
+		©上海证券交易所版权所有 2010       沪ICP备<a target="_blank" href="http://www.miibeian.gov.cn/">05004045</a>号     &nbsp;&nbsp;建议使用IE7.0+浏览器，1024x768分辨率
+	</span>
+
+</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td id="right_shadow" style="background: url(http://www.sse.com.cn/images/home_cambridge_blue_topbj.gif) repeat-x;">&nbsp;</td>
+			</tr>
+		</tbody></table>
+	
+
+
+<script type="text/javascript" language="javascript">
+	jQuery( function() {
+
+		var a_width = jQuery("#A_Area").width();
+		var b_width = jQuery("#B_Area").width();
+
+                var area_width;
+            
+               area_width  = a_width + b_width + 10;
+		if (area_width < 1004) {                    
+			area_width = 1004;
+		}
+
+		jQuery("#Area").css("width", area_width);
+                jQuery(".targetTR").css("background","#FFFFFF");    
+                jQuery("#B_Area").css("background","#FFFFFF");  
+                jQuery("#A_Area").css("background","#efefef");    
+
+
+	});
+</script>
+<div style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 186px; height: 198px;" src="./ETF规模_files/DatePicker.html" frameborder="0" border="0" scrolling="no"></iframe></div></body></html>

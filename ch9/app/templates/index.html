@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>
+
+<div align="center "> 待办事项 </div></h2>
+
+    <table style="width:100%;"  >
+        <tr>
+             <td width="50px" nowrap>
+                 优先级
+            </td>
+            <td width="100px" nowrap>
+                完成否</td>
+            <td width="250px" nowrap>
+                任务描述</td>
+            <td width="50px" nowrap>
+                终止日期 </td>
+
+        </tr>
+        {%for t in todo%}
+        <tr>
+            <td width="100px" nowrap>
+
+                   <img src="{{ url_for('fig',level = t.level) }}" alt="优先级" height="40">
+
+            </td>
+
+            <td width="120px" nowrap>
+                 {% if t.status==False %}
+                   需要加油
+                  {% else %}
+                    完成
+                  {%endif%}
+                </td>
+            <td>
+                {{t.title}}
+            </td>
+            <td>
+                {{t.DateDue}}
+                <sup> <a href="/del/{{ t.id }}" >删除</a> |
+            <a href="/done/{{ t.id }}" >完成</a></sup>
+            </td>
+        </tr>
+        {%endfor%}
+
+    </table>
+<hr>
+<h1>添加新的待办事项 </h1>
+{%import "bootstrap/wtf.html" as wtf %}
+{{ form.csrf_token }}
+{{wtf.quick_form(form)}}
+{% endblock %}
+</hr>

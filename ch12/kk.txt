@@ -1,0 +1,3 @@
+root
+['rootattr1', 'rootattr2']
+[('rootattr1', '123'), ('rootattr2', '456')]
